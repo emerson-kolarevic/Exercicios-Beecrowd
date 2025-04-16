@@ -35,7 +35,7 @@ while True:
         ajuste_primeiro_ano = 1.035
         ajuste_demais_anos = 1.10
 
-        salario_primeiro_atualizacao = float(salario_contratacao*ajuste_primeiro_ano)
+        salario_primeiro_atualizacao = (salario_contratacao*ajuste_primeiro_ano)
         salario_atual = salario_primeiro_atualizacao * ((ajuste_demais_anos)**(anos_trabalho - 1))
         percentual_aumento = ((salario_atual / salario_contratacao)-1)*100
 
@@ -43,6 +43,7 @@ while True:
         print(f"\nIsso corresponde a um aumento de {percentual_aumento:.2f}% em relação ao salário inicial de R$ {salario_contratacao:.2f}.")
 
     continuar = input("Deseja avaliar outro funcionário? (S/N): ").lower()
+
     if continuar != "s":
         print("\nEncerrando o programa. Até a próxima!")
         break
