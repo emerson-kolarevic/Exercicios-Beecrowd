@@ -2,7 +2,7 @@ pendentes = ["1 - Estudar Inglês", "2 - Fazer Compras"]
 andamento = ["1 - Apresentação Marketing"]
 concluidas = []
 
-print("-----Programa Iniciado-----\n")
+print("\n-----Programa Iniciado-----\n")
 
 print("Escolha uma opção no menu abaixo:\n")
 
